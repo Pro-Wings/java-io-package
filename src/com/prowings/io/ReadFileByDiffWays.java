@@ -21,9 +21,9 @@ public class ReadFileByDiffWays {
 		String data = "India is most powerful country";
 		String data1 = " with 28 states";
 
-		System.out.println(readFileUsingFileWriter());
+		System.out.println(readFileUsingFileReader());
 
-		System.out.println(readFileUsingBufferedWriter());
+		System.out.println(readFileUsingBufferedReader());
 		System.out.println(readFileUsingBufferedWriterLinesMethod());
 
 //		readFileUsingFileInputStream(data);
@@ -69,7 +69,7 @@ public class ReadFileByDiffWays {
 
 	}
 
-	private static String readFileUsingBufferedWriter() throws IOException {
+	private static String readFileUsingBufferedReader() throws IOException {
 
 		File file = new File("E:/JAVA_NOTES/Map/myPractice/collection-practice/src/yyy.txt");
 		FileReader fr = new FileReader(file);
@@ -103,7 +103,7 @@ public class ReadFileByDiffWays {
 
 	}
 
-	private static String readFileUsingFileWriter() throws IOException {
+	private static String readFileUsingFileReader() throws IOException {
 
 		File file = new File("E:/JAVA_NOTES/Map/myPractice/collection-practice/src/xxx.txt");
 		FileReader fr = null;
